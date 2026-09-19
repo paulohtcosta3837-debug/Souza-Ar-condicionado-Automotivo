@@ -32,10 +32,10 @@ export const ExploreBento: React.FC = () => {
       <div className="relative z-10">
         {/* Cabeçalho da Seção */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-12"
         >
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 border border-sky-200 text-sky-800 text-xs sm:text-sm font-bold mb-3">
@@ -51,15 +51,30 @@ export const ExploreBento: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Pilares Essenciais Relocados com Destaque e Elegância */}
+        {/* Pilares Essenciais com Staggered Fade-In */}
         <motion.div 
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.12,
+                delayChildren: 0.05
+              }
+            }
+          }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-10 sm:mb-12"
         >
-          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-sky-300 transition-all group">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 14 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+            }}
+            className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-sky-300 transition-all group"
+          >
             <div className="p-3 rounded-xl bg-sky-50 text-sky-600 group-hover:bg-sky-500 group-hover:text-white transition-colors shrink-0">
               <Snowflake className="w-5 h-5 animate-spin-slow" />
             </div>
@@ -67,9 +82,15 @@ export const ExploreBento: React.FC = () => {
               <h3 className="text-sm font-bold text-slate-900">Ar Gelando no Máximo</h3>
               <p className="text-xs text-slate-600 font-medium">Eficiência térmica calibrada e fluxo potente</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all group">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 14 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+            }}
+            className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all group"
+          >
             <div className="p-3 rounded-xl bg-emerald-50 text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
@@ -77,9 +98,15 @@ export const ExploreBento: React.FC = () => {
               <h3 className="text-sm font-bold text-slate-900">Teste de Estanqueidade</h3>
               <p className="text-xs text-slate-600 font-medium">Vácuo e pressão para garantia de zero vazamento</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-cyan-300 transition-all group">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 14 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+            }}
+            className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-cyan-300 transition-all group"
+          >
             <div className="p-3 rounded-xl bg-cyan-50 text-cyan-600 group-hover:bg-cyan-500 group-hover:text-white transition-colors shrink-0">
               <Gauge className="w-5 h-5" />
             </div>
@@ -87,18 +114,33 @@ export const ExploreBento: React.FC = () => {
               <h3 className="text-sm font-bold text-slate-900">Carga Ecológica R134a / R1234yf</h3>
               <p className="text-xs text-slate-600 font-medium">Dosagem digital milimétrica e fluido de fábrica</p>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
 
-        {/* Grid Bento */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
+        {/* Grid Bento com Staggered Fade-in */}
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.15,
+                delayChildren: 0.1
+              }
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6"
+        >
 
         {/* Bloco Grande: Diagnóstico Computadorizado e Carga de Gás Ecológica (col-span-12 lg:col-span-8) */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] } }
+          }}
           className="md:col-span-12 lg:col-span-8 bg-white/80 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden group"
         >
           <div>
@@ -159,10 +201,10 @@ export const ExploreBento: React.FC = () => {
 
         {/* Bloco Médio 1: Atendimento Emergencial SOS (col-span-12 sm:col-span-6 lg:col-span-4) */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] } }
+          }}
           className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-amber-50/70 to-white/80 backdrop-blur-[12px] border border-amber-200/70 hover:border-amber-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
         >
           <div>
@@ -198,10 +240,10 @@ export const ExploreBento: React.FC = () => {
 
         {/* Bloco Médio 2: Saúde e Ar Limpo (col-span-12 sm:col-span-6 lg:col-span-4) */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] } }
+          }}
           className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-emerald-50/70 to-white/80 backdrop-blur-[12px] border border-emerald-200/70 hover:border-emerald-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
         >
           <div>
@@ -236,10 +278,10 @@ export const ExploreBento: React.FC = () => {
 
         {/* Bloco Indicadores de Confiança e Estrutura Técnica com Fotos do Estabelecimento (col-span-12 lg:col-span-8) */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] } }
+          }}
           className="md:col-span-12 lg:col-span-8 bg-white/85 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300"
         >
           <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
@@ -325,7 +367,7 @@ export const ExploreBento: React.FC = () => {
           </div>
         </motion.div>
 
-      </div>
+        </motion.div>
       </div>
     </section>
   );

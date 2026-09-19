@@ -39,14 +39,14 @@ export const AboutSection: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* Linha Superior: Filosofia & História */}
+        {/* Linha Superior: Filosofia & História com Revelação Suave */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 items-center">
           
           <motion.div 
-            initial={{ opacity: 0, x: -25 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="lg:col-span-6 space-y-6"
           >
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs sm:text-sm font-semibold">
@@ -67,9 +67,27 @@ export const AboutSection: React.FC = () => {
               Nossa filosofia é pautada na <strong className="text-slate-900 font-semibold">transparência absoluta</strong>: apresentamos o teste de estanqueidade a você, explicamos se há desgaste elétrico ou mecânico e só realizamos o procedimento com a sua total aprovação.
             </p>
 
-            {/* Pilares da Oficina */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="p-4 rounded-2xl bg-[#f8fafc] border border-slate-200/80">
+            {/* Pilares da Oficina com Staggered Fade-in */}
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { staggerChildren: 0.12, delayChildren: 0.1 }
+                }
+              }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2"
+            >
+              <motion.div 
+                variants={{
+                  hidden: { opacity: 0, y: 12 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+                }}
+                className="p-4 rounded-2xl bg-[#f8fafc] border border-slate-200/80"
+              >
                 <div className="flex items-center gap-2 text-[#0284c7] font-bold text-sm mb-1.5">
                   <Target className="w-4 h-4" />
                   <span>Resolução Definitiva</span>
@@ -77,9 +95,15 @@ export const AboutSection: React.FC = () => {
                 <p className="text-xs text-slate-600">
                   Localizamos a causa-raiz do problema e não apenas mascaramos o sintoma temporariamente.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="p-4 rounded-2xl bg-[#f8fafc] border border-slate-200/80">
+              <motion.div 
+                variants={{
+                  hidden: { opacity: 0, y: 12 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+                }}
+                className="p-4 rounded-2xl bg-[#f8fafc] border border-slate-200/80"
+              >
                 <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm mb-1.5">
                   <HeartHandshake className="w-4 h-4" />
                   <span>Atendimento Transparente</span>
@@ -87,8 +111,8 @@ export const AboutSection: React.FC = () => {
                 <p className="text-xs text-slate-600">
                   Orçamento claro, sem surpresas na fatura e com explicações didáticas para você rodar seguro.
                 </p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
             <div className="pt-2 flex items-center gap-3 text-xs sm:text-sm text-slate-600 font-medium">
               <MapPin className="w-4 h-4 text-sky-600 shrink-0" />
@@ -98,10 +122,10 @@ export const AboutSection: React.FC = () => {
 
           {/* Galeria de Fotos e Ferramental (Visualizador Limpo sem textos sobrepostos) */}
           <motion.div 
-            initial={{ opacity: 0, x: 25 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.6, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="lg:col-span-6 flex flex-col gap-4"
           >
             {/* Visualizador Principal */}
