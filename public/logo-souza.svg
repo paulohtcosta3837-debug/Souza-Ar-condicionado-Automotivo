@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80" fill="none">
+  <!-- Symbol Icon Background -->
+  <rect x="4" y="8" width="64" height="64" rx="16" fill="#f0f9ff" stroke="#bae6fd" stroke-width="2"/>
+  
+  <!-- Snowflake / Air Flow Symbol -->
+  <path d="M36 20v40M22 34l28 12M22 46l28-12" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="36" cy="40" r="5" fill="#0ea5e9" stroke="#0284c7" stroke-width="2"/>
+  <path d="M32 24l4-4 4 4M32 56l4 4 4-4M24 32l-4 4 4 4M48 32l4 4-4 4" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Brand Typography -->
+  <text x="82" y="42" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="28" fill="#0f172a" letter-spacing="0.5">SOUZA</text>
+  <text x="82" y="60" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="600" font-size="11" fill="#0284c7" letter-spacing="1.5">AR-CONDICIONADO AUTOMOTIVO</text>
+</svg>

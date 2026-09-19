@@ -1,0 +1,6 @@
+{
+  "name": "Souza Ar-condicionado Automotivo",
+  "description": "Oficina especializada em climatização automotiva, recarga de gás, manutenção de compressores e socorro SOS em Itaúna - MG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
