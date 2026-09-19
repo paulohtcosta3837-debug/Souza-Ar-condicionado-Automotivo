@@ -69,7 +69,7 @@ export const CategoriesOverview: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-white border border-slate-200 hover:border-sky-300 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white/80 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 {/* Imagem do Serviço */}
@@ -85,7 +85,7 @@ export const CategoriesOverview: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   
                   {/* Ícone Flutuante */}
-                  <div className="absolute top-4 left-4 p-2.5 rounded-2xl bg-white/95 backdrop-blur-md shadow-md border border-white/40">
+                  <div className="absolute top-4 left-4 p-2.5 rounded-2xl bg-white/90 backdrop-blur-[12px] shadow-md border border-white/60">
                     {getIcon(service.iconName)}
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export const CategoriesOverview: React.FC = () => {
                     {service.tags.slice(0, 3).map((tag) => (
                       <span 
                         key={tag} 
-                        className="px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 text-[11px] font-bold border border-sky-100"
+                        className="px-2.5 py-0.5 rounded-full bg-sky-50/90 text-sky-700 text-[11px] font-bold border border-sky-100/80"
                       >
                         {tag}
                       </span>
@@ -131,7 +131,7 @@ export const CategoriesOverview: React.FC = () => {
                 {/* Botão Ver Detalhes (Abre Modal) */}
                 <button
                   onClick={() => setSelectedService(service)}
-                  className="w-full inline-flex items-center justify-center gap-1.5 py-3 px-4 rounded-full text-xs sm:text-sm font-semibold text-slate-700 hover:text-sky-700 bg-slate-50 hover:bg-sky-50 border border-slate-200 hover:border-sky-200 transition-colors cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-1.5 py-3 px-4 rounded-full text-xs sm:text-sm font-semibold text-slate-700 hover:text-sky-700 bg-white/70 hover:bg-sky-50/80 backdrop-blur-[8px] border border-slate-200/80 hover:border-sky-200 transition-colors cursor-pointer"
                 >
                   <Info className="w-4 h-4 text-sky-600" />
                   <span>Ver detalhes técnicos</span>

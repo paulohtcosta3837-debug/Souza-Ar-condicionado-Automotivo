@@ -59,7 +59,7 @@ export const ExploreBento: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-10 sm:mb-12"
         >
-          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-sky-200/80 shadow-xs hover:shadow-md hover:border-sky-300 transition-all group">
+          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-sky-300 transition-all group">
             <div className="p-3 rounded-xl bg-sky-50 text-sky-600 group-hover:bg-sky-500 group-hover:text-white transition-colors shrink-0">
               <Snowflake className="w-5 h-5 animate-spin-slow" />
             </div>
@@ -69,7 +69,7 @@ export const ExploreBento: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-emerald-200/80 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all group">
+          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all group">
             <div className="p-3 rounded-xl bg-emerald-50 text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
@@ -79,7 +79,7 @@ export const ExploreBento: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-cyan-200/80 shadow-xs hover:shadow-md hover:border-cyan-300 transition-all group">
+          <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-white/80 backdrop-blur-[12px] border border-white/70 shadow-xs hover:shadow-md hover:border-cyan-300 transition-all group">
             <div className="p-3 rounded-xl bg-cyan-50 text-cyan-600 group-hover:bg-cyan-500 group-hover:text-white transition-colors shrink-0">
               <Gauge className="w-5 h-5" />
             </div>
@@ -99,15 +99,15 @@ export const ExploreBento: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="md:col-span-12 lg:col-span-8 bg-white border border-slate-200 hover:border-sky-300 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden group"
+          className="md:col-span-12 lg:col-span-8 bg-white/80 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden group"
         >
           <div>
             <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50/90 border border-sky-200/80 text-sky-800 text-xs font-bold">
                 <Cpu className="w-3.5 h-3.5 text-sky-600" />
                 Precisão Digital & Automação
               </span>
-              <span className="text-xs font-semibold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100 flex items-center gap-1">
+              <span className="text-xs font-semibold text-sky-700 bg-sky-50/90 px-2.5 py-1 rounded-full border border-sky-100/80 flex items-center gap-1">
                 <Gauge className="w-3.5 h-3.5 text-sky-600" /> Vácuo & Estanqueidade
               </span>
             </div>
@@ -163,11 +163,11 @@ export const ExploreBento: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-amber-50/40 to-white border border-amber-200/80 hover:border-amber-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+          className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-amber-50/70 to-white/80 backdrop-blur-[12px] border border-amber-200/70 hover:border-amber-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
         >
           <div>
             <div className="flex items-center justify-between mb-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100/85 border border-amber-300/80 text-amber-900 text-xs font-bold">
                 <ShieldAlert className="w-3.5 h-3.5 text-amber-600" />
                 Resposta Prioritária
               </span>
@@ -183,7 +183,7 @@ export const ExploreBento: React.FC = () => {
             </p>
           </div>
 
-          <div className="mt-6 pt-5 border-t border-amber-100">
+          <div className="mt-6 pt-5 border-t border-amber-100/80">
             <a
               href="https://wa.me/5537998570029?text=URGENTE%20SOS%3A%20Preciso%20de%20socorro%20para%20o%20ar-condicionado%20do%20meu%20carro%20em%20Ita%C3%BAna!"
               target="_blank"
@@ -202,15 +202,15 @@ export const ExploreBento: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-emerald-50/40 to-white border border-emerald-200/80 hover:border-emerald-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+          className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-emerald-50/70 to-white/80 backdrop-blur-[12px] border border-emerald-200/70 hover:border-emerald-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
         >
           <div>
             <div className="flex items-center justify-between mb-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-900 text-xs font-bold">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100/85 border border-emerald-300/80 text-emerald-900 text-xs font-bold">
                 <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
                 Oxissaniatização O3
               </span>
-              <span className="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full">
+              <span className="text-[11px] font-bold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-full">
                 99.9% Eficaz
               </span>
             </div>
@@ -224,8 +224,8 @@ export const ExploreBento: React.FC = () => {
             </p>
           </div>
 
-          <div className="mt-6 pt-4 border-t border-emerald-100 flex items-center justify-between text-xs text-slate-600">
-            <span className="font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+          <div className="mt-6 pt-4 border-t border-emerald-100/80 flex items-center justify-between text-xs text-slate-600">
+            <span className="font-semibold text-emerald-800 bg-emerald-50/90 px-2.5 py-1 rounded-full border border-emerald-200">
               Ideal para alérgicos
             </span>
             <span className="font-bold text-slate-800 flex items-center gap-1">
@@ -240,7 +240,7 @@ export const ExploreBento: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="md:col-span-12 lg:col-span-8 bg-white/95 backdrop-blur-sm border border-slate-200 hover:border-sky-300 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300"
+          className="md:col-span-12 lg:col-span-8 bg-white/85 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300"
         >
           <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
             <div className="flex items-center gap-2">
