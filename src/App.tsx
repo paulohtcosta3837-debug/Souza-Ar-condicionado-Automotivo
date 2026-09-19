@@ -23,8 +23,13 @@ export default function App() {
     }
   }, []);
 
+  const handleGoHome = () => {
+    setIs404(false);
+    window.history.pushState({}, '', '/');
+  };
+
   if (is404) {
-    return <NotFoundPage onGoHome={() => setIs404(false)} />;
+    return <NotFoundPage onGoHome={handleGoHome} />;
   }
 
   return (
