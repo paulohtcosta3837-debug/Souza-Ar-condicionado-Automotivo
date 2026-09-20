@@ -82,26 +82,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
           <a 
             href="#hero" 
             onClick={(e) => handleLinkClick(e, '#hero')}
-            className="flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-sky-500 rounded-lg p-1"
+            className="flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-sky-500 rounded-lg p-0.5"
             title="Souza Ar-condicionado Automotivo - Início"
           >
             <img 
-              src="/logo-souza.svg" 
+              src="/logo.png" 
               alt="Souza Ar-condicionado Automotivo - Oficina especializada em Itaúna MG"
-              width="210"
-              height="44"
+              width="180"
+              height="48"
               loading="eager"
-              className="h-7 sm:h-9 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-[1.03]"
               onError={(e) => {
                 const target = e.currentTarget;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent && !parent.querySelector('.logo-fallback')) {
-                  const fallback = document.createElement('div');
-                  fallback.className = 'logo-fallback flex items-center gap-2 text-slate-900 font-extrabold text-sm sm:text-base';
-                  fallback.innerHTML = '<span class="text-sky-600 font-black">SOUZA</span> AR AUTOMOTIVO';
-                  parent.appendChild(fallback);
-                }
+                target.src = '/logo.jfif';
               }}
             />
           </a>

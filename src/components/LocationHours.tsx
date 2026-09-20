@@ -8,7 +8,7 @@ export const LocationHours: React.FC = () => {
     <section 
       id="localizacao"
       aria-label="Localização da Oficina e Horários de Funcionamento"
-      className="relative py-16 sm:py-24 px-4 sm:px-6 bg-[#f8fafc] overflow-hidden"
+      className="relative py-10 sm:py-14 px-4 sm:px-6 bg-[#f8fafc] overflow-hidden"
     >
       {/* Ambient Blur ao fundo */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-sky-200/40 rounded-full blur-3xl pointer-events-none" />
@@ -22,17 +22,13 @@ export const LocationHours: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5 }}
-          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-10"
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs sm:text-sm font-semibold mb-3">
-            <MapPin className="w-3.5 h-3.5 text-sky-600" />
-            Fácil Acesso em Itaúna
-          </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight">
             Localização Estratégica e{' '}
             <span className="italic font-serif text-[#0284c7]">Horários de Atendimento</span>
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600">
+          <p className="mt-2 text-sm sm:text-base text-slate-600">
             Oficina ampla, com pátio seguro e maquinário completo situada no Trevo Padre Eustáquio para sua total conveniência.
           </p>
         </motion.div>

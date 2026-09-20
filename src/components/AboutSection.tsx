@@ -31,7 +31,7 @@ export const AboutSection: React.FC = () => {
     <section 
       id="sobre"
       aria-label="Sobre a Souza Ar-condicionado Automotivo e Estrutura"
-      className="relative py-16 sm:py-24 px-4 sm:px-6 bg-white border-b border-slate-200/60 overflow-hidden"
+      className="relative py-10 sm:py-14 px-4 sm:px-6 bg-white border-b border-slate-200/60 overflow-hidden"
     >
       {/* Ambient Blur ao fundo para dar vida e profundidade */}
       <div className="absolute top-1/4 -left-24 w-80 sm:w-96 h-80 sm:h-96 bg-sky-200/30 rounded-full blur-3xl pointer-events-none" />
@@ -40,20 +40,15 @@ export const AboutSection: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
 
         {/* Linha Superior: Filosofia & História com Revelação Suave */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
           
           <motion.div 
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-            className="lg:col-span-6 space-y-6"
+            className="lg:col-span-6 space-y-4 sm:space-y-5"
           >
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs sm:text-sm font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-              Nossa Oficina & Filosofia
-            </div>
-
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
               Compromisso com o motorista de Itaúna:{' '}
               <span className="italic font-serif text-[#0284c7]">diagnóstico honesto</span> e resolução definitiva

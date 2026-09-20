@@ -46,12 +46,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
           <div className="lg:col-span-4 space-y-4">
             <a href="#hero" className="inline-block">
               <img
-                src="/logo-souza.svg"
+                src="/logo.png"
                 alt="Souza Ar-condicionado Automotivo - Itaúna MG"
-                width="210"
-                height="44"
+                width="190"
+                height="50"
                 loading="lazy"
-                className="h-9 w-auto object-contain"
+                className="h-10 sm:h-12 w-auto object-contain"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  target.src = '/logo.jfif';
+                }}
               />
             </a>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">

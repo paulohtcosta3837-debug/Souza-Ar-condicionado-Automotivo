@@ -27,7 +27,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDesc: "Serviço técnico especializado para restabelecer a capacidade frigorífica original do seu veículo. Realizamos vácuo profundo, teste de estanqueidade eletrônico, análise do óleo lubrificante PAG/POE do compressor, substituição de válvulas de expansão e recarga computadorizada na gramatura estipulada pelo fabricante do veículo.",
     tags: ["Recarga de Gás", "Compressor", "Evaporador", "Diagnóstico Técnico"],
     iconName: "ThermometerSnowflake",
-    imageUrl: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/climatizacao-automotiva.png",
     features: [
       "Recarga ecológica de gás (R134a e R1234yf) com balança de alta precisão",
       "Teste de vácuo e detecção de microvazamentos por contraste UV e nitrogênio",
@@ -45,7 +45,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDesc: "Procedimento essencial para a saúde respiratória de motoristas e passageiros. O gerador de ozônio penetra em todos os canais de ar, carpetes e estofados, eliminando 99,9% de ácaros, fungos, bactérias e odores desagradáveis de mofo, tabaco e umidade, finalizado com a instalação de novo filtro de cabine com carvão ativado.",
     tags: ["Oxissaniatização", "Ozônio", "Filtro de Cabine", "Ar Puro"],
     iconName: "Wind",
-    imageUrl: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/manutencao-e-higienizacao.png",
     features: [
       "Esterilização por ozônio (O3) com laudo de desinfecção biológica",
       "Aplicação de bactericida biodegradável específico para caixas evaporadoras",
@@ -63,7 +63,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDesc: "Socorro direcionado para motoristas que necessitam de atendimento prioritário em Itaúna ou que estão em deslocamento pela região do Trevo Padre Eustáquio e enfrentaram panes inesperadas no calor intenso: travamento de polia, queima de fusível/relé, perda de gás ou superaquecimento.",
     tags: ["SOS Imediato", "Diagnóstico Ágil", "Trevo Padre Eustáquio", "Emergência"],
     iconName: "AlertTriangle",
-    imageUrl: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/servico-sos-emergencial.png",
     features: [
       "Diagnóstico express imediato com termometria a laser e manometria digital",
       "Substituição emergencial de correias, fusíveis e relés de acionamento",
@@ -120,28 +120,28 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: "g1",
     title: "Estação de Carga e Diagnóstico",
     category: "Ferramental de Precisão",
-    imageUrl: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/estacao-de-carga-e-diagnostico.png",
     caption: "Máquina automatizada de vácuo, reciclagem e injeção de gás com dosagem exata."
   },
   {
     id: "g2",
     title: "Bancada de Compressores Automotivos",
     category: "Mecânica de Climatização",
-    imageUrl: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/bancada-de-compressores-automotivos.png",
     caption: "Revisão meticulosa de rolamentos, embreagem magnética e válvulas de controle."
   },
   {
     id: "g3",
     title: "Higienização por Oxissaniatização",
     category: "Saúde e Purificação",
-    imageUrl: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/higienizacao-por-oxissaniatizacao.png",
     caption: "Desinfecção profunda por ozônio no interior do habitáculo e difusores de ar."
   },
   {
     id: "g4",
     title: "Aferição Térmica dos Difusores",
     category: "Controle de Qualidade",
-    imageUrl: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=900&auto=format&fit=crop",
+    imageUrl: "/afericao-termica-dos-difusores.png",
     caption: "Medição de temperatura de saída garantindo ar gelando entre 4°C e 7°C."
   }
 ];

@@ -16,7 +16,7 @@ export const FAQ: React.FC = () => {
     <section 
       id="faq"
       aria-label="Perguntas Frequentes sobre Ar-condicionado Automotivo"
-      className="py-16 sm:py-24 px-4 sm:px-6 bg-white border-b border-slate-200/60"
+      className="py-10 sm:py-14 px-4 sm:px-6 bg-white border-b border-slate-200/60"
     >
       <div className="max-w-4xl mx-auto">
         
@@ -26,12 +26,8 @@ export const FAQ: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-8 sm:mb-10"
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs sm:text-sm font-semibold mb-3">
-            <HelpCircle className="w-3.5 h-3.5 text-sky-600" />
-            Tire Suas Dúvidas
-          </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight">
             Perguntas Frequentes{' '}
             <span className="italic font-serif text-[#0284c7]">(FAQ)</span>

@@ -32,7 +32,7 @@ export const CategoriesOverview: React.FC = () => {
     <section 
       id="servicos"
       aria-label="Catálogo Completo de Serviços de Ar-condicionado"
-      className="relative py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-[#f8fafc] via-sky-50/30 to-white border-t border-sky-100 overflow-hidden"
+      className="relative py-10 sm:py-14 px-4 sm:px-6 bg-gradient-to-b from-[#f8fafc] via-sky-50/30 to-white border-t border-sky-100 overflow-hidden"
     >
       {/* Elementos de Ambient Blur ao Fundo para Dar Vida e Profundidade */}
       <div className="absolute top-10 -left-20 w-80 h-80 bg-sky-200/35 rounded-full blur-3xl pointer-events-none" />
@@ -46,16 +46,13 @@ export const CategoriesOverview: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-10"
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 border border-sky-200 text-sky-800 text-xs sm:text-sm font-bold mb-3">
-            Catálogo Especializado
-          </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight">
             Nossos Serviços de{' '}
             <span className="italic font-serif text-sky-600">Climatização Automotiva</span>
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600">
+          <p className="mt-2 text-sm sm:text-base text-slate-600">
             Soluções completas com equipamentos modernos, transparência orçamentária e atendimento humanizado para o seu carro em Itaúna.
           </p>
         </motion.div>

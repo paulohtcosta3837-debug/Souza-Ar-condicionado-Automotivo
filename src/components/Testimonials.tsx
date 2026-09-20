@@ -8,7 +8,7 @@ export const Testimonials: React.FC = () => {
     <section 
       id="depoimentos"
       aria-label="Avaliações de Clientes no Google"
-      className="relative py-16 sm:py-24 px-4 sm:px-6 bg-[#f8fafc] border-b border-slate-200/60 overflow-hidden"
+      className="relative py-10 sm:py-14 px-4 sm:px-6 bg-[#f8fafc] border-b border-slate-200/60 overflow-hidden"
     >
       {/* Ambient Blur ao fundo */}
       <div className="absolute top-10 right-10 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none" />
@@ -22,7 +22,7 @@ export const Testimonials: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5 }}
-          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-10"
         >
           {/* Selo Google Reviews */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs text-xs font-semibold text-slate-700 mb-4">

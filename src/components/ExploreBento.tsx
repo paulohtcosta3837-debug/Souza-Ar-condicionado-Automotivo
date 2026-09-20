@@ -22,7 +22,7 @@ export const ExploreBento: React.FC = () => {
     <section 
       id="diferenciais"
       aria-label="Diferenciais da Souza Ar-condicionado"
-      className="relative py-16 sm:py-24 px-4 sm:px-6 max-w-7xl mx-auto overflow-hidden"
+      className="relative py-10 sm:py-14 px-4 sm:px-6 max-w-7xl mx-auto overflow-hidden"
     >
       {/* Elementos de Ambient Blur ao Fundo para Dar Mais Vida, Profundidade e Estilo */}
       <div className="absolute -top-16 -left-20 w-80 sm:w-96 h-80 sm:h-96 bg-sky-200/40 rounded-full blur-3xl pointer-events-none" />
@@ -36,17 +36,13 @@ export const ExploreBento: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="text-center max-w-3xl mx-auto mb-10 sm:mb-12"
+          className="text-center max-w-3xl mx-auto mb-6 sm:mb-8"
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 border border-sky-200 text-sky-800 text-xs sm:text-sm font-bold mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-            Padrão de Concessionária em Itaúna
-          </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight">
             Tecnologia e precisão para o{' '}
             <span className="italic font-serif text-sky-600">máximo rendimento</span> do seu ar
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600">
+          <p className="mt-2 text-sm sm:text-base text-slate-600">
             Nossa estrutura conta com estações recicladoras digitais e procedimentos técnicos que protegem o compressor e garantem a temperatura ideal na cabine.
           </p>
         </motion.div>
@@ -66,7 +62,7 @@ export const ExploreBento: React.FC = () => {
               }
             }
           }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-10 sm:mb-12"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-6 sm:mb-8"
         >
           <motion.div
             variants={{
@@ -144,16 +140,6 @@ export const ExploreBento: React.FC = () => {
           className="md:col-span-12 lg:col-span-8 bg-white/80 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden group"
         >
           <div>
-            <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50/90 border border-sky-200/80 text-sky-800 text-xs font-bold">
-                <Cpu className="w-3.5 h-3.5 text-sky-600" />
-                Precisão Digital & Automação
-              </span>
-              <span className="text-xs font-semibold text-sky-700 bg-sky-50/90 px-2.5 py-1 rounded-full border border-sky-100/80 flex items-center gap-1">
-                <Gauge className="w-3.5 h-3.5 text-sky-600" /> Vácuo & Estanqueidade
-              </span>
-            </div>
-
             <h3 className="text-xl sm:text-2xl font-bold text-[#0f172a] tracking-tight leading-snug group-hover:text-sky-700 transition-colors">
               Diagnóstico Computadorizado e Carga de Gás Ecológica
             </h3>
@@ -247,16 +233,6 @@ export const ExploreBento: React.FC = () => {
           className="md:col-span-6 lg:col-span-4 bg-gradient-to-b from-emerald-50/70 to-white/80 backdrop-blur-[12px] border border-emerald-200/70 hover:border-emerald-400 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
         >
           <div>
-            <div className="flex items-center justify-between mb-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100/85 border border-emerald-300/80 text-emerald-900 text-xs font-bold">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-                Oxissaniatização O3
-              </span>
-              <span className="text-[11px] font-bold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-full">
-                99.9% Eficaz
-              </span>
-            </div>
-
             <h3 className="text-lg sm:text-xl font-bold text-[#0f172a] tracking-tight">
               Saúde e Ar Limpo
             </h3>
@@ -284,24 +260,18 @@ export const ExploreBento: React.FC = () => {
           }}
           className="md:col-span-12 lg:col-span-8 bg-white/85 backdrop-blur-[12px] border border-white/60 hover:border-sky-300/80 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300"
         >
-          <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
-            <div className="flex items-center gap-2">
-              <Wrench className="w-4 h-4 text-sky-600" />
-              <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                Indicadores de Confiança e Estrutura Técnica
-              </h3>
-            </div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-semibold">
-              <Building2 className="w-3.5 h-3.5 text-sky-600" />
-              Instalações Próprias em Itaúna - MG
-            </span>
+          <div className="flex items-center gap-2 mb-5">
+            <Wrench className="w-4 h-4 text-sky-600" />
+            <h3 className="text-base sm:text-lg font-bold text-slate-900">
+              Indicadores de Confiança e Estrutura Técnica
+            </h3>
           </div>
 
           {/* Fotos Reais do Estabelecimento / Oficina */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div className="relative group/photo rounded-2xl overflow-hidden aspect-[4/3] border border-slate-200/80 shadow-2xs">
               <img 
-                src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?q=80&w=600&auto=format&fit=crop" 
+                src="/boxes-de-atendimento.png" 
                 alt="Boxes de Atendimento e Estrutura da Oficina Souza Ar-condicionado"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover/photo:scale-105"
                 loading="lazy"
@@ -314,7 +284,7 @@ export const ExploreBento: React.FC = () => {
 
             <div className="relative group/photo rounded-2xl overflow-hidden aspect-[4/3] border border-slate-200/80 shadow-2xs">
               <img 
-                src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=600&auto=format&fit=crop" 
+                src="/estacao-digital-automatizada.png" 
                 alt="Estação Digital Automatizada de Diagnóstico de Ar-condicionado"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover/photo:scale-105"
                 loading="lazy"
@@ -327,7 +297,7 @@ export const ExploreBento: React.FC = () => {
 
             <div className="relative group/photo rounded-2xl overflow-hidden aspect-[4/3] border border-slate-200/80 shadow-2xs">
               <img 
-                src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600&auto=format&fit=crop" 
+                src="/bancada-especializada.png" 
                 alt="Bancada Mecânica de Compressores e Ferramental Especializado"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover/photo:scale-105"
                 loading="lazy"
