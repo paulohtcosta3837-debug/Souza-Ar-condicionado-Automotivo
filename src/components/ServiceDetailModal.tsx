@@ -22,32 +22,25 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({ service,
         className="bg-white border border-slate-200 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header com Imagem de Fundo */}
-        <div className="relative h-48 sm:h-56 w-full overflow-hidden rounded-t-3xl bg-slate-900">
-          <img 
-            src={service.imageUrl} 
-            alt={service.title} 
-            className="w-full h-full object-cover filter brightness-90"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-black/30" />
-          
+        {/* Header Limpo e Elegante sem Imagem */}
+        <div className="relative p-6 sm:p-7 border-b border-slate-100 bg-gradient-to-br from-sky-50/70 via-white to-slate-50/60 rounded-t-3xl">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2 text-white/90 hover:text-white bg-black/40 hover:bg-black/60 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-sky-400"
+            className="absolute top-5 right-5 p-2 text-slate-500 hover:text-slate-800 bg-white hover:bg-slate-100 border border-slate-200 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-sky-400 shadow-2xs"
             aria-label="Fechar detalhes do serviço"
           >
             <X className="w-5 h-5" />
           </button>
 
-          <div className="absolute bottom-4 left-6 right-6">
-            <div className="flex flex-wrap gap-2 mb-2">
+          <div className="pr-10">
+            <div className="flex flex-wrap gap-2 mb-2.5">
               {service.tags.map((tag) => (
-                <span key={tag} className="px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold border border-white/30">
+                <span key={tag} className="px-2.5 py-0.5 rounded-full bg-sky-100/90 text-sky-800 text-[11px] font-bold border border-sky-200/70">
                   {tag}
                 </span>
               ))}
             </div>
-            <h3 id="modal-service-title" className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+            <h3 id="modal-service-title" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
               {service.title}
             </h3>
           </div>

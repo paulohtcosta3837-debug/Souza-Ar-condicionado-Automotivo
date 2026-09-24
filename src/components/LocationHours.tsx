@@ -119,7 +119,7 @@ export const LocationHours: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Coluna Direita: Mapa Interativo Embutido */}
+          {/* Coluna Direita: Mapa Interativo Embutido (Mini Mapa) */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -127,9 +127,20 @@ export const LocationHours: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="lg:col-span-7 bg-white border border-[#e2e8f0] rounded-3xl p-3 sm:p-4 shadow-xs flex flex-col overflow-hidden min-h-[380px] sm:min-h-[440px]"
           >
+            {/* Identificador do Mini Mapa com o Endereço Exato */}
+            <div className="flex flex-wrap items-center justify-between px-2 pb-2.5 mb-1 gap-2 text-xs">
+              <div className="flex items-center gap-2 font-bold text-slate-800">
+                <MapPin className="w-4 h-4 text-sky-600" />
+                <span>Mini Mapa de Localização</span>
+              </div>
+              <span className="text-[11px] font-semibold text-sky-700 bg-sky-50 px-2.5 py-0.5 rounded-full border border-sky-100">
+                {BUSINESS_INFO.fullAddress}
+              </span>
+            </div>
+
             <div className="w-full h-full min-h-[350px] rounded-2xl overflow-hidden relative border border-slate-200">
               <iframe
-                title="Mapa de Localização Souza Ar-condicionado Automotivo Itaúna MG"
+                title={`Mini Mapa de Localização - ${BUSINESS_INFO.fullAddress}`}
                 src={BUSINESS_INFO.mapEmbedUrl}
                 width="100%"
                 height="100%"
@@ -141,7 +152,7 @@ export const LocationHours: React.FC = () => {
               />
             </div>
             <div className="mt-3 px-2 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-2">
-              <span>Coordenadas: Itaúna - MG (Trevo Padre Eustáquio)</span>
+              <span className="font-medium text-slate-700">Endereço: <strong className="text-slate-900 font-bold">{BUSINESS_INFO.fullAddress}</strong></span>
               <a 
                 href={BUSINESS_INFO.googleMapsUrl}
                 target="_blank"

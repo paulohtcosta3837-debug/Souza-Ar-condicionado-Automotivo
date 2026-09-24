@@ -3,15 +3,15 @@ import { BusinessInfo, FaqItem, GalleryPhoto, ServiceItem, TestimonialItem } fro
 export const BUSINESS_INFO: BusinessInfo = {
   name: "Souza Ar-condicionado Automotivo",
   tradeName: "Souza Climatização Automotiva",
-  address: "Doutor Walter Mendes Nogueira Trevo padre Eustáquio",
+  address: "Av. Dr. Walter Mendes Nogueira, 384",
   neighborhood: "Vila Tavares",
-  cityStateZip: "Itaúna - MG, 35680-085",
-  fullAddress: "Doutor Walter Mendes Nogueira Trevo padre Eustáquio - Vila Tavares, Itaúna - MG, 35680-085",
+  cityStateZip: "Itaúna - MG",
+  fullAddress: "Av. Dr. Walter Mendes Nogueira, 384, Vila Tavares, Itaúna - MG",
   phoneRaw: "5537998570029",
   phoneFormatted: "+55 (37) 99857-0029",
   whatsappUrl: "https://wa.me/5537998570029?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20ar-condicionado%20do%20meu%20ve%C3%ADculo.",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Doutor+Walter+Mendes+Nogueira+Trevo+padre+Eust%C3%A1quio+-+Vila+Tavares,+Ita%C3%BAna+-+MG,+35680-085",
-  mapEmbedUrl: "https://maps.google.com/maps?q=Doutor%20Walter%20Mendes%20Nogueira%20Trevo%20padre%20Eust%C3%A1quio%20Vila%20Tavares%20Itauna%20MG&t=&z=16&ie=UTF8&iwloc=&output=embed",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Av.+Dr.+Walter+Mendes+Nogueira,+384,+Vila+Tavares,+Ita%C3%BAna+-+MG",
+  mapEmbedUrl: "https://maps.google.com/maps?q=Av.+Dr.+Walter+Mendes+Nogueira%2C+384%2C+Vila+Tavares%2C+Ita%C3%BAna+-+MG&t=&z=16&ie=UTF8&iwloc=&output=embed",
   hours: {
     weekdays: "Segunda a Sexta: 08:00 às 18:00",
     saturdays: "Sábado: 08:00 às 12:00",
@@ -22,7 +22,7 @@ export const BUSINESS_INFO: BusinessInfo = {
 export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "climatizacao-completa",
-    title: "Souza-ar Climatização Automotiva",
+    title: "Climatização Automotiva",
     shortDesc: "Manutenção completa em compressores, condensadores, evaporadores, mangueiras, eletroventiladores e recarga de gás refrigerante com pesagem exata.",
     fullDesc: "Serviço técnico especializado para restabelecer a capacidade frigorífica original do seu veículo. Realizamos vácuo profundo, teste de estanqueidade eletrônico, análise do óleo lubrificante PAG/POE do compressor, substituição de válvulas de expansão e recarga computadorizada na gramatura estipulada pelo fabricante do veículo.",
     tags: ["Recarga de Gás", "Compressor", "Evaporador", "Diagnóstico Técnico"],
@@ -36,7 +36,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Substituição de mangueiras com prensagem padrão montadora"
     ],
     durationEstimate: "45 a 90 minutos",
-    whatsappMessage: "https://wa.me/5537998570029?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Souza-ar%20Climatiza%C3%A7%C3%A3o%20Automotiva%20para%20o%20meu%20ve%C3%ADculo."
+    whatsappMessage: "https://wa.me/5537998570029?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Climatiza%C3%A7%C3%A3o%20Automotiva%20para%20o%20meu%20ve%C3%ADculo."
   },
   {
     id: "higienizacao-filtro",
@@ -209,6 +209,6 @@ export const FAQ_DATA: FaqItem[] = [
   {
     id: "faq-5",
     question: "Onde a oficina fica localizada e quais são as formas de pagamento?",
-    answer: "Estamos estrategicamente localizados na Doutor Walter Mendes Nogueira Trevo padre Eustáquio - Vila Tavares, Itaúna - MG, CEP 35680-085, com fácil acesso para veículos de passeio e utilitários. Aceitamos pagamentos via PIX, cartões de crédito (com possibilidade de parcelamento), débito e dinheiro à vista."
+    answer: "Estamos estrategicamente localizados na Av. Dr. Walter Mendes Nogueira, 384, Vila Tavares, Itaúna - MG, com fácil acesso para veículos de passeio e utilitários. Aceitamos pagamentos via PIX, cartões de crédito (com possibilidade de parcelamento), débito e dinheiro à vista."
   }
 ];

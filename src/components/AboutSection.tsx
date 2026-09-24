@@ -111,7 +111,7 @@ export const AboutSection: React.FC = () => {
 
             <div className="pt-2 flex items-center gap-3 text-xs sm:text-sm text-slate-600 font-medium">
               <MapPin className="w-4 h-4 text-sky-600 shrink-0" />
-              <span>Localização privilegiada no Trevo Padre Eustáquio - Vila Tavares, Itaúna - MG</span>
+              <span>Localização: {BUSINESS_INFO.fullAddress}</span>
             </div>
           </motion.div>
 
